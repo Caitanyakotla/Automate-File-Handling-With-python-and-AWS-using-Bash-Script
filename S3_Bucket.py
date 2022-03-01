@@ -13,3 +13,6 @@ for file in os.listdir():
         upload_file_bucket = 'Kubernetes-config-files'
         upload_file_key = 'Kube-files/' + str(file)
         client.upload_file(file, upload_file_bucket, upload_file_key)
+        
+    print("Download Successful!")
+    return True
